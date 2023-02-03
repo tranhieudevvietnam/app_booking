@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 
-import 'pages/startup_screen.dart';
+import 'pages/sign_in_screen.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const StartUpScreen(),
+      home: const SingInScreen(),
     );
   }
 }

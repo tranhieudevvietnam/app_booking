@@ -19,7 +19,7 @@ class _StartUpScreenState extends State<StartUpScreen> {
             width: size.width,
             height: size.height,
             child: FittedBox(
-                fit: BoxFit.fitWidth,
+                fit: BoxFit.cover,
                 child: Image.asset("assets/image_background.png")),
           ),
           Column(
@@ -132,7 +132,9 @@ class _StartUpScreenState extends State<StartUpScreen> {
                                       child: Text(
                                         "Create an account".toUpperCase(),
                                       )),
-                                  const Spacer(),
+                                  const Spacer(
+                                    flex: 2,
+                                  ),
                                 ]),
                           ),
                         )
